@@ -6,6 +6,7 @@ to use it just put a location into the quotations behind the path variabnle exec
 #Current supportet Formats 
 
 -png 
+
 -jpg
 
 idk I might add more at some point
