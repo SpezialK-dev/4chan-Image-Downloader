@@ -2,6 +2,9 @@
 import os
 import requests
 from bs4 import BeautifulSoup  # needed for html analysis
+from sys import argv
+
+threadURL = argv[1] if len(argv) > 1 else input("Your link here: ")
 
 header = {
     "User-Agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.75 Safari/537.36",
@@ -61,6 +64,5 @@ def download(link, name):
 
 
 # executing the program
-Link = input("Your link here: ")
-Html = scraper(Link)
+Html = scraper(threadURL)
 links(Html)
